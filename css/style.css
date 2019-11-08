@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px 0;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 25px;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.col {
+  padding: 0 15px;
+}
+.col-12 {
+  max-width: 100%;
+}
+.col-11 {
+  max-width: 91.66666667%;
+}
+.col-10 {
+  max-width: 83.33333333%;
+}
+.col-9 {
+  max-width: 75%;
+}
+.col-8 {
+  max-width: 66.66666667%;
+}
+.col-7 {
+  max-width: 58.33333333%;
+}
+.col-6 {
+  max-width: 50%;
+}
+.col-5 {
+  max-width: 41.66666667%;
+}
+.col-4 {
+  max-width: 33.33333333%;
+}
+.col-3 {
+  max-width: 25%;
+}
+.col-2 {
+  max-width: 16.66666667%;
+}
+.col-1 {
+  max-width: 8.33333333%;
+}
+
+@media (max-width: 841px) {
+  .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8 {
+    max-width: 100%;
+  }
+  .col-sm-7 {
+    max-width: 87.5%;
+  }
+  .col-sm-6 {
+    max-width: 75%;
+  }
+  .col-sm-5 {
+    max-width: 62.5%;
+  }
+  .col-sm-4 {
+    max-width: 50%;
+  }
+  .col-sm-3 {
+    max-width: 37.5%;
+  }
+  .col-sm-2 {
+    max-width: 25%;
+  }
+  .col-sm-1 {
+    max-width: 12.5%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

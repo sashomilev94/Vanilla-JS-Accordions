@@ -1,0 +1,76 @@
+.accordion .accordion-top {
+  padding: 14px 25px;
+  border-bottom: 1px solid #e4e6e5;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  color: #333;
+  background: #fff;
+}
+.accordion .accordion-top h2 {
+  font-weight: 400;
+}
+
+.accordion-section {
+  border-bottom: 1px solid #e4e6e5;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+}
+.accordion-section.active {
+  margin: 30px 0;
+}
+.accordion-section.active .accordion-head:before {
+  transform: rotate(-45deg);
+}
+.accordion-section .accordion-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0465ac;
+}
+.accordion-section .accordion-subtitle {
+  margin-top: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+}
+.accordion-section .accordion-head {
+  position: relative;
+  padding: 14px 64px 14px 25px;
+  background: #fff;
+}
+.accordion-section .accordion-head:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  border-color: #0465ac;
+  margin: auto;
+  transform: rotate(135deg);
+  vertical-align: top;
+  content: "";
+  transition: transform 0.4s;
+}
+.accordion-section .accordion-body {
+  height: 0;
+  padding: 0 25px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.accordion-section .accordion-body.active {
+  padding: 11px 25px 25px;
+  opacity: 1;
+}
+.accordion-section .accordion-entry {
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+}
+
+/*# sourceMappingURL=accordion.css.map */

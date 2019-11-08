@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Accordion demo page</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" />
+
+	<link rel="stylesheet" href="css/accordion.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" media="all" />
+
+	<script type="text/javascript" src="js/accordion.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-8 col-sm-8">
+				<div id="my-accordion" class="accordion"></div><!-- /#my-accordion -->
+			</div><!-- /.col-12 -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+
+	<script type="text/javascript">
+		var options = {
+			container: 'my-accordion',
+			mainTitle: 'Main accordion title', // Optional title header
+			panels: [{
+				title: 'My profile',
+				subtitle: 'Update your profile information Update your profile information Update your profile information Update your profile information', // Optional subtitle
+				content: '<p>Html content for this panel</p>' // Html to inject as panel content (e.g. a form)
+			},{
+				title: 'Change password',
+				subtitle: 'Change your login password', // Optional subtitle
+				content: '<p>Html content for this panel</p>' // Html to inject as panel content (e.g. a form)
+			},
+			,{
+				title: 'Preferences',
+				subtitle: 'Set your language and timezone preferences', // Optional subtitle
+				content: '<p>Html content for this panel</p>' // Html to inject as panel content (e.g. a form)
+			},
+			,{
+				title: 'No description title',
+				content: '<p>Html content for this panel</p>' // Html to inject as panel content (e.g. a form)
+			}
+			]
+		};
+
+		var accordion = new Accordion(options);
+	</script>
+</body>
+</html>
